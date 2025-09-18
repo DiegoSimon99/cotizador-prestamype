@@ -1,75 +1,37 @@
-# Nuxt Minimal Starter
+# 💱 Cotizador de Cambio (Nuxt 3 + Pinia + Tailwind + Firebase)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Un cotizador online de dólares y soles en Perú.  
+Construido con **Nuxt 3**, **Pinia** para estado global, **TailwindCSS** para estilos y **Firebase Firestore** para obtener las tasas de cambio en tiempo real.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Tecnologías usadas
+- [Nuxt 3](https://nuxt.com/) — Framework de Vue para SSR/SPA.
+- [Pinia](https://pinia.vuejs.org/) — Store management.
+- [TailwindCSS](https://tailwindcss.com/) — Estilos utilitarios.
+- [Firebase Firestore](https://firebase.google.com/) — Base de datos en la nube.
+- [Vite](https://vitejs.dev/) — Bundler.
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## ⚙️ Instalación y ejecución local
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Clonar el repositorio:
 
 ```bash
-# npm
-npm run dev
+git clone https://github.com/DiegoSimon99/cotizador-prestamype.git
+cd cotizador-prestamype
 
-# pnpm
-pnpm dev
+Instalar dependencias: npm install
+Ejecutar en modo desarrollo: npm run dev
 
-# yarn
-yarn dev
+Crea un archivo .env en la raíz con las siguientes claves (ejemplo):
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+NUXT_PUBLIC_FIREBASE_API_KEY=xxxxxxxxxxxxxxxxxxxx
+NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN=xxxx.firebaseapp.com
+NUXT_PUBLIC_FIREBASE_PROJECT_ID=xxxx
+NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET=xxxx.appspot.com
+NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=xxxx
+NUXT_PUBLIC_FIREBASE_APP_ID=1:xxxx:web:xxxx
+NUXT_PUBLIC_FIREBASE_RATES_COLLECTION=rates
+NUXT_PUBLIC_FIREBASE_RATES_DOC_ID=TDmXIypgLKKfNggHHSnw
